@@ -18,10 +18,9 @@ for the catalog rules.
 - Install, update and uninstall are the user's decision. Over MCP,
   `addons.community.install` needs `acknowledgeUnverified: true` only after the
   user agreed to run unverified code. Every change needs a Translator++ restart.
-- `blockedReason` "already installed ... not installed from a community
-  source" means the user has another copy (official store or manual). They must
-  uninstall that copy in the add-on manager first; the community installer never
-  replaces it.
+- If Translator++ says the add-on is already installed from elsewhere, the user
+  has another copy with the same package name (for example a manual install).
+  They remove that copy first; Translator++ does not replace it.
 - Bugs go to the add-on repository's issues, not this catalog.
 
 ## Creating a new add-on repository
@@ -48,8 +47,8 @@ for the catalog rules.
 3. In this catalog: change the entry's `ref` to the new tag, run
    `node scripts/validate-catalog.js`, update the README table, and open a pull
    request (or push to `main` when you maintain the catalog alone).
-4. Users see **Update** after the catalog change reaches `main` (Translator++
-   caches listings for about five minutes).
+4. Users see **Update** in Translator++ within a few minutes of the catalog
+   change reaching `main`.
 
 Never move or delete a published tag; publish a new version instead.
 
@@ -83,9 +82,7 @@ CI must pass. Record notable review findings in the pull request.
   uninstall. Fix forward with a new version and tag.
 - Archive a repository on GitHub only after removing its catalog entry.
 
-## Catalog policy
+## Catalog scope
 
-Translator++ reads this catalog with `links: sameOwner`, so entries outside
-`pismax/*` are ignored. Listing a third-party repository needs a change to the
-source list in Translator++'s Basic Utility (a `links: any` source or a separate
-source entry), which is outside this repository.
+This catalog lists only pismax repositories. Add-ons by other developers
+belong in their own catalogs.

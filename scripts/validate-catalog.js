@@ -44,7 +44,7 @@ async function checkEntry(entry, index, names) {
     const repo = parseRepo(entry.repo);
     if (!repo) return fail(`${label}: "repo" must be owner/repo, got ${JSON.stringify(entry.repo)}`);
     const id = `${repo.owner}/${repo.repo}`;
-    if (repo.owner.toLowerCase() !== owner) fail(`${id}: Translator++ lists this catalog with links "sameOwner"; only ${owner}/* repositories are shown.`);
+    if (repo.owner.toLowerCase() !== owner) fail(`${id}: this catalog lists only ${owner}/* repositories.`);
     const ref = entry.ref;
     if (!ref) warn(`${id}: no "ref"; users get the default branch "main". Pin a tag.`);
     else if (!REF.test(ref) || ref.includes('..')) fail(`${id}: invalid ref ${JSON.stringify(ref)}`);

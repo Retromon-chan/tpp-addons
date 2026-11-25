@@ -1,7 +1,8 @@
 # pismax add-ons for Translator++
 
-Community add-ons for Translator++, published by pismax. Each add-on lives in its own repository; this repository
-holds the catalog (`tpp-catalog.json`) that Translator++ reads.
+Translator++ parsers for console games. Each add-on lives in its own
+repository; this one holds the catalog (`tpp-catalog.json`) that lists the
+current release of each.
 
 | Add-on | Repository | Version |
 |---|---|---|
@@ -11,20 +12,22 @@ holds the catalog (`tpp-catalog.json`) that Translator++ reads.
 
 ## Install
 
-In Translator++ 8.11.25 or later (Basic Utility 0.35 or later), open
-**Options → Add-ons → Install** and scroll to **Community add-ons**. Select
-**Install**, then restart Translator++.
+**From Translator++:** if your version has **Options → Add-ons → Install →
+Community add-ons**, the add-ons appear there. Select **Install**, then restart
+Translator++. Updates show up in the same place.
 
-Each add-on is installed from the exact commit its catalog tag points to. No
-git or GitHub account is needed.
+**Manually:** on the add-on's repository, open **Tags**, download the zip of
+the version listed above, extract it into `<Translator++>/www/addons/`, and
+rename the extracted folder to the add-on's package name (`tm2Psx`, `tm4Psp`
+or `pm4Ps2`). Then restart Translator++.
 
-Community add-ons are not reviewed by the Translator++ developers. They run
-with the same access to your computer as any other add-on, so install only
-what you trust. Report problems in the add-on's own repository.
+Each add-on's README lists the game version it supports and the Translator++
+version it needs. You need your own copy of the game; no game data is included.
 
-## For add-on developers and maintainers
+Add-ons run with full access to your computer, like any Translator++ add-on.
+Report problems in the add-on's repository.
 
-See [AGENTS.md](AGENTS.md): repository layout, publishing a version, catalog
-changes and the review checklist. It is written for people and coding agents
-alike. Catalog changes are validated by `node scripts/validate-catalog.js`
-(also run in CI on every pull request).
+## Developing
+
+See [AGENTS.md](AGENTS.md) for how releases and catalog changes work. It is
+written for people and coding agents alike.
