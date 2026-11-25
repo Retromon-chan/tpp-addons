@@ -4,6 +4,6 @@
   "addons": [
     { "repo": "pismax/tpp-tm2Psx", "ref": "v0.1.49" },
     { "repo": "pismax/tpp-tm4Psp", "ref": "v1.2.6" },
-    { "repo": "pismax/tpp-pm4Ps2", "ref": "v0.4.1" }
+    { "repo": "pismax/tpp-pm4Ps2", "ref": "v0.5.0" }
   ]
 }
