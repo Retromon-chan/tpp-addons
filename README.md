@@ -6,7 +6,7 @@ current release of each.
 
 | Add-on | Repository | Version |
 |---|---|---|
-| Tokimeki Memorial 2 (PlayStation) parser | [pismax/tpp-tm2Psx](https://github.com/pismax/tpp-tm2Psx) | 0.1.48 |
+| Tokimeki Memorial 2 (PlayStation) parser | [pismax/tpp-tm2Psx](https://github.com/pismax/tpp-tm2Psx) | 0.1.49 |
 | Tokimeki Memorial 4 (PSP) parser | [pismax/tpp-tm4Psp](https://github.com/pismax/tpp-tm4Psp) | 1.2.5 |
 | Princess Maker 4 (PS2) parser | [pismax/tpp-pm4Ps2](https://github.com/pismax/tpp-pm4Ps2) | 0.3.0 |
 

@@ -2,7 +2,7 @@
   "schema": 1,
   "title": "pismax add-ons",
   "addons": [
-    { "repo": "pismax/tpp-tm2Psx", "ref": "v0.1.48" },
+    { "repo": "pismax/tpp-tm2Psx", "ref": "v0.1.49" },
     { "repo": "pismax/tpp-tm4Psp", "ref": "v1.2.5" },
     { "repo": "pismax/tpp-pm4Ps2", "ref": "v0.3.0" }
   ]
